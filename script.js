@@ -1,4 +1,5 @@
 const capitalAmount= 2074.56;
+const dailyInterest=0.67;
 document.getElementById('capital').value=`Php ${formatNumber(capitalAmount)}`;
 
 function formatNumber(number) {return number.toFixed(3).replace(/\B(?=(\d{3})+(?!\d))/g, ",");}
@@ -43,7 +44,6 @@ function totalDue(){
 
     return due;
 }
-
 
 totalDue();
 dateToday();
