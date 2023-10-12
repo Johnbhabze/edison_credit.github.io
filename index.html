@@ -8,10 +8,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    <?php echo "<div id='timeNow'></div>";?>
-    <?php $dailyInterest = 0.67 ?>
-    <script>const dailyInterest = <?php echo $dailyInterest; ?>;</script>
-    <div id="parentContainer"  >
+    <div id='timeNow'></div>
+    <div id="parentContainer">
     <header>Edison Jurac Villarba</header>
     <div id="pCconent">
         <div id="img"><img src="https://scontent.fceb5-1.fna.fbcdn.net/v/t39.30808-6/383082038_219185587821252_3125034222106586439_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=a2f6c7&_nc_eui2=AeHWZzkhTHfhzdFIlBgMiqoX42mkvvMmeMfjaaS-8yZ4x2YyrM-XefpHvi8490r4j_AB07g4HwwkwOS3C2jPyqd-&_nc_ohc=WYgyKFV2VPEAX81oIhx&_nc_ht=scontent.fceb5-1.fna&oh=00_AfClCn0F0g0I_A0z2XsA_-xGnwmg_dyZJoQHQ5fFUAJf8w&oe=652B73DA" alt="Edison Villarba's facebook profile picture">
@@ -20,7 +18,7 @@
             <tr>
                 <td>Capital Borrowed</td>
                 <td>:</td>
-                <td ><input type="text" id="capital" value="<?php echo 'Php '.$capitalAmount; ?>" disabled></td>
+                <td ><input type="text" id="capital" value="" disabled></td>
             </tr>
             <tr>
                 <td>Date Borrowed</td>
@@ -35,7 +33,7 @@
             <tr>
                 <td>Interest per day</td>
                 <td>:</td>
-                <td><input type="text" id="interestPerDay" value="<?php echo $dailyInterest.'%' ?>" disabled></td>
+                <td><input type="text" id="interestPerDay" value="0.67%" disabled></td>
             </tr>
             <tr>
                 <td style="font-weight:bold;">Total due</td>
