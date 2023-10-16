@@ -40,9 +40,23 @@ function totalDue(){
     const fDue = formatNumber(due);
     
     document.getElementById('totalDue').value = `Php ${fDue}`;
-    amountDue.innerHTML = `Php ${fDue}`;
+    const pay = Math.ceil(due);
+    amountDue.innerHTML = `Php ${pay}`;
 
     return due;
+}
+
+function copyText(){
+    const phone = document.getElementById("Phone").innerText;
+    const name = document.getElementById("name").innerText;
+    const amountDue = Math.ceil(totalDue());
+    navigator.clipboard.writeText(phone);
+    navigator.clipboard.writeText(name);
+    navigator.clipboard.writeText(amountDue);
+    console.log(name);
+    console.log(phone);
+    console.log(amountDue);
+    
 }
 
 totalDue();
