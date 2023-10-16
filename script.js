@@ -20,7 +20,6 @@ function formatDate(date) {
 function dateStart() {
     const specificDate = new Date('2022-05-07T00:32:26');
     const formattedDate = formatDate(specificDate);
-    document.getElementById('dateBorrowed').value = formattedDate;
     return specificDate;
 }
 
@@ -41,22 +40,9 @@ function totalDue(){
     
     document.getElementById('totalDue').value = `Php ${fDue}`;
     const pay = Math.ceil(due);
-    amountDue.innerHTML = `Php ${pay}`;
+    amountDue.innerHTML = `Php ${pay.toFixed(2)}`;
 
     return due;
-}
-
-function copyText(){
-    const phone = document.getElementById("Phone").innerText;
-    const name = document.getElementById("name").innerText;
-    const amountDue = Math.ceil(totalDue());
-    navigator.clipboard.writeText(phone);
-    navigator.clipboard.writeText(name);
-    navigator.clipboard.writeText(amountDue);
-    console.log(name);
-    console.log(phone);
-    console.log(amountDue);
-    
 }
 
 totalDue();
