@@ -15,32 +15,29 @@ td{padding: 0 15px; }
 #copied{font-size: 10px; text-align: center;}
 
 #msgBgd{display:none; top: 0; left:0;width: 100%;height: 100%;background: #000000bf;position: fixed;z-index: 1;}
-#msgContainer{border-radius: 20px;margin-top: 25%;margin-left: 50%;width: fit-content; transform: translate(-50%, -50%); padding-bottom: 20px; background: #ffffff; height: 320px;}
-#msgContainer img{width: 150px;}
+#msgContainer{border-radius: 20px;margin-top: 25%;margin-left: 50%;width: fit-content; transform: translate(-50%, -50%); padding-bottom: 20px; background: #ffffff; height: fit-content;}
+#msgContainer img{width: 150px; padding: 15px 0 0 0;}
 #btnX{position: absolute;right: 0;padding: 3px 17px;font-size: xx-large;color: #868686; cursor: pointer; transition: 0.3s ease-in-out;}
 #btnX:hover{color: #FE7777; transform: rotate(90deg);}
-
-#payTable table td{padding: 10px;}
+#payTable{margin:5px 25px;}
+#payTable table td{padding: 5px;  }
 #clipper{margin:0 20px; width: fit-content; position: fixed; right: 0; border: solid; color: #fff;padding: 10px; border-radius: 10px; background: #007dfe; transition: 0.3s ease-in-out; cursor: pointer;}
 #clipper:hover{background: #0065ca;}
 
 @media (max-width: 936px){
-    header{font-size: x-large; font-weight: 600;margin-bottom: 10px; text-align: center; }
-    img{width: 170px;}
-    #img{ margin-bottom: 10px;}
+    header{font-size: large; font-weight: 600;margin-bottom: 10px; text-align: center; }
+    img{width: 120px; padding: 10px 0 0 0;}
     #pCconent{display: block; text-align: center;}
-    table{margin: 0 auto; text-align: right; margin-bottom: 10px;}
+    table{margin: 0 auto; text-align: right;}
     #timeNow{z-index: 1; background: rgba(0, 0, 0, 0.25); padding: 10px; border-radius: 10px; color: #FFF; font-size: 12px;}
-    #msgContainer{margin-top: 50%; height: 270px;}
-    td{font-size: 10px; padding: 1px;}
-    .tdc{padding: 2px;}
-    .tdV input{padding: 1px; font-size: 10px; width: 180px;}
-    .tdt {width: 180px;}
-    #msgContainer{padding: 10px 20px; width: fit-content;}
+    td{font-size: 10px;}
+    .tdV input{padding: 1px; font-size: 10px; width: 120px;}
     #btnX{font-size: x-large;}
-    #msgContainer img{width: 100px;}
+    #msgContainer{margin-top: 50%;height: fit-content; width: fit-content;}
+    #msgContainer img{width: 100px; padding: 10px 0 0 0;}
     #msgContainer p {font-size: 10px; padding: 1px;}
-    #payTable Table td {padding: 5px;}
-    #payTable{padding-top: 5px; margin: 5px;}
+    #payTable Table td {padding: 0 10px;}
+    #payTable{padding-top: 5px; margin: 1px 5px;}
     #pay{font-size: small; width: fit-content;}
+    #totalDue{font-size: small;}
 }
