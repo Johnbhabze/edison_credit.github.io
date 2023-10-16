@@ -3,9 +3,9 @@
 #timeNow{position: fixed; right: 30px; top: 30px; }
 header{font-size: xx-large; font-weight: 600;margin-bottom: 30px;}
 #parentContainer{ padding: 50px; margin-top: 80px;}
-#pCconent{display: flex;}
+#pCconent{display: flex; margin-bottom: 10px;}
 img{width: 250px; border-radius: 10px; filter: contrast(1.2) brightness(1.1) saturate(1.5);}
-#img img{box-shadow: 2px 2px 2px #474747;}
+#img img{box-shadow: 2px 2px 2px #474747; border-radius: 50%; margin-right: 20px;}
 input{padding: 10px;  width: 250px; border: transparent; background: transparent;}
 #totalDue{color: rgb(255, 0, 0); font-weight: 600; font-size: x-large;}
 td{padding: 0 15px; }
@@ -22,9 +22,16 @@ a{text-decoration: none; color: #fff;padding: 10px; border-radius: 10px; backgro
 a:hover{background: #0065ca;}
 
 @media (max-width: 936px){
-    header{font-size: xx-large; font-weight: 600;margin-bottom: 30px; text-align: center;}
+    header{font-size: x-large; font-weight: 600;margin-bottom: 10px; text-align: center; }
+    img{width: 170px;}
+    #img{ margin-bottom: 10px;}
     #pCconent{display: block; text-align: center;}
-    table{margin: 0 auto; text-align: right;}
-    #timeNow{z-index: 1; background: rgba(0, 0, 0, 0.25); padding: 10px; border-radius: 10px; color: #FFF;}
+    table{margin: 0 auto; text-align: right; margin-bottom: 10px;}
+    #timeNow{z-index: 1; background: rgba(0, 0, 0, 0.25); padding: 10px; border-radius: 10px; color: #FFF; font-size: 12px;}
     #msgContainer{margin-top: 50%;}
+    td{font-size: 10px; padding: 1px;}
+    .tdc{padding: 2px;}
+    .tdV input{padding: 1px; font-size: 10px; width: 180px;}
+    .tdt {width: 180px;}
+    #msgContainer{width:300px;}
 }
